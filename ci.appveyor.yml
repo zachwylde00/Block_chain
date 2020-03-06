@@ -1,0 +1,27 @@
+version: 1.0.{build}
+configuration: Debug
+platform: ARM
+clone_folder: https://github.com/zachwylde00/blockchain.git/
+build:
+  publish_wap_xcopy: true
+  publish_nuget: true
+  publish_nuget_symbols: true
+  use_snupkg_format: true
+  include_nuget_references: true
+  publish_aspnet_core: true
+  publish_core_console: true
+  parallel: true
+  verbosity: detailed
+      - build:
+  https://ci.appveyor.com/api/projects/status/v716fe37rklcsycq?svg=true
+
+      - build: https://ci.appveyor.com/api/projects/status/v716fe37rklcsycq
+
+      - build: ["true"![Build status]]     - (https://ci.appveyor.com/api/projects/status/v716fe37rklcsycq?svg=true)](https://ci.appveyor.com/project/zachwylde00/blockchain)
+
+
+      - build: https://ci.appveyor.com/api/projects/status/v716fe37rklcsycq/branch/master?svg=true
+
+      -build: https://ci.appveyor.com/api/projects/status/v716fe37rklcsycq/branch/master
+
+      - build: [!true[Build status]](https://ci.appveyor.com/api/projects/status/v716fe37rklcsycq/
